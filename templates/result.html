@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion réussie</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background:#0f172a;
+            color:white;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            margin:0;
+        }
+
+        .container{
+            background:#1e293b;
+            padding:40px;
+            border-radius:15px;
+            text-align:center;
+            width:400px;
+            box-shadow:0 0 20px rgba(0,0,0,0.4);
+        }
+
+        h1{
+            margin-bottom:20px;
+            color:#22c55e;
+        }
+
+        p{
+            margin-bottom:30px;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:12px 20px;
+            margin:10px;
+            border:none;
+            border-radius:10px;
+            text-decoration:none;
+            color:white;
+            font-weight:bold;
+            cursor:pointer;
+        }
+
+        .download{
+            background:#2563eb;
+        }
+
+        .download:hover{
+            background:#1d4ed8;
+        }
+
+        .new{
+            background:#22c55e;
+        }
+
+        .new:hover{
+            background:#16a34a;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Conversion réussie ✅</h1>
+
+        <p>
+            Votre fichier a été converti avec succès.
+        </p>
+
+        <!-- Télécharger -->
+        <a
+            class="btn download"
+            href="{{ url_for('download', filename=filename) }}"
+        >
+            Télécharger
+        </a>
+
+        <!-- Nouvelle conversion -->
+        <a
+            class="btn new"
+            href="{{ url_for('index') }}"
+        >
+            Nouvelle conversion
+        </a>
+
+    </div>
+
+</body>
+</html>

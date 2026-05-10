@@ -1,0 +1,23 @@
+# Environnement virtuel Python
+venv/
+
+# Cache Python
+__pycache__/
+*.pyc
+
+# Fichiers temporaires
+*.log
+*.tmp
+
+# Fichiers système Windows
+Thumbs.db
+Desktop.ini
+
+# VS Code (optionnel)
+.vscode/
+
+# Uploads temporaires
+uploads/
+
+# Conversions générées
+conversions/GIT
