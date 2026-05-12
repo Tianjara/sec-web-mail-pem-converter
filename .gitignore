@@ -1,5 +1,7 @@
 # Environnement virtuel Python
 venv/
+.venv/
+env/
 
 # Cache Python
 __pycache__/
@@ -9,15 +11,18 @@ __pycache__/
 *.log
 *.tmp
 
+# VS Code
+.vscode/
+
 # Fichiers système Windows
 Thumbs.db
 Desktop.ini
-
-# VS Code (optionnel)
-.vscode/
 
 # Uploads temporaires
 uploads/
 
 # Conversions générées
-conversions/GIT
+conversions/
+
+# Variables d'environnement
+.env

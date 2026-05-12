@@ -1,15 +1,25 @@
 # Sec Web Mail PEM Converter
 
-Projet Flask permettant de convertir des certificats et clés en format PEM.
+Application web développée avec Flask permettant de convertir des certificats SSL vers le format PEM.
 
-## Technologies
+## Fonctionnalités
+
+- Conversion de certificats SSL en format PEM
+- Interface web simple et moderne
+- Téléchargement automatique du fichier converti
+- Compatible avec OpenSSL
+
+## Technologies utilisées
 
 - Python
 - Flask
+- HTML
+- CSS
 - OpenSSL
-- HTML/CSS
 
 ## Installation
 
+Clonez le projet :
+
 ```bash
-pip install -r requirements.txt
+git clone https://github.com/Tianjara/sec-web-mail-pem-converter.git
